@@ -6,20 +6,18 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class FrikandevHeading {
-  @Prop() size: number;
+  @Prop() size?: number;
 
   initSize = (): number => {
     if (!this.size || this.size > 6) {
-      return this.size;
+      return 6;
     }
-
-    this.size = Math.floor(this.size);
 
     if (this.size < 1) {
       return 1;
     }
 
-    return this.size;
+    return Math.floor(this.size);
   };
 
   render() {

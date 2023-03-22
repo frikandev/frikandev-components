@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FrikandevHeading {
-        "size": number;
+        "size"?: number;
     }
 }
 declare global {

@@ -5,12 +5,14 @@ describe('frikandev-heading', () => {
   it('renders', async () => {
     const page = await newSpecPage({
       components: [FrikandevHeading],
-      html: `<frikandev-heading></frikandev-heading>`,
+      html: `<frikandev-heading size="1"></frikandev-heading>`,
     });
     expect(page.root).toEqualHtml(`
-      <frikandev-heading>
+      <frikandev-heading size="1">
         <mock:shadow-root>
-          <slot></slot>
+          <h1>
+            <slot></slot>
+          </h1>
         </mock:shadow-root>
       </frikandev-heading>
     `);
