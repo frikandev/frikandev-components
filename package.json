@@ -10,12 +10,9 @@
   "unpkg": "dist/frikandev-components/frikandev-components.esm.js",
   "collection:main": "dist/collection/index.js",
   "collection": "dist/collection/collection-manifest.json",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
-  },
   "files": [
     "dist/",
+    "global/",
     "loader/"
   ],
   "scripts": {

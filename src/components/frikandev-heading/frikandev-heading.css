@@ -1,6 +1,11 @@
 :host {
   display: block;
 }
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 700;
