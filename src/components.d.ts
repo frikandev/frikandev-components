@@ -22,18 +22,7 @@ declare global {
 }
 declare namespace LocalJSX {
   interface FrikandevHeading {
-    /**
-     * The first name
-     */
-    first?: string;
-    /**
-     * The last name
-     */
-    last?: string;
-    /**
-     * The middle name
-     */
-    middle?: string;
+    size: number;
   }
   interface IntrinsicElements {
     'frikandev-heading': FrikandevHeading;
